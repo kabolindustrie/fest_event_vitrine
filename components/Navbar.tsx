@@ -42,14 +42,17 @@ export default function Navbar() {
               </NavigationMenuTrigger>
               <NavigationMenuContent className="bg-white shadow-md p-4 rounded-md min-w-[200px] text-left">
                 <div className="flex flex-col gap-2">
-                  <Link href="/categorie/jeux-gonflables" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
-                    Jeux gonflables
-                  </Link>
-                  <Link href="/categorie/chateaux-gonflables" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
+                  <Link href="/categorie/chateau" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
                     Châteaux gonflables
                   </Link>
-                  <Link href="/categorie/parcours-gonflables" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
-                    Parcours gonflables
+                  <Link href="/categorie/toboggan" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
+                    Toboggans
+                  </Link>
+                  <Link href="/categorie/animation" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
+                    Animation
+                  </Link>
+                  <Link href="/categorie/snack" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
+                    Snacks
                   </Link>
                 </div>
               </NavigationMenuContent>
