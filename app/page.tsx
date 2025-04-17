@@ -20,7 +20,7 @@ export default function Home() {
 
       {/* TITRE DE SECTION */}
       <section className="text-center mt-20">
-        <h2 className="text-3xl font-bold text-gray-800">Nos structures disponibles</h2>
+        <h2 className="text-4xl font-bold text-gray-800">Nos structures disponibles</h2>
         <p className="text-gray-500 mt-2">Découvrez nos jeux, châteaux, toboggans et animations</p>
       </section>
 

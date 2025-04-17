@@ -25,8 +25,8 @@ export default function PageDetail({ params }: Props) {
         </div>
 
         {/* Texte à droite */}
-        <div className="md:w-1/2 flex flex-col justify-center  p-3 border-2 border-amber-600/20 rounded-2xl shadow-xl">
-          <h1 className="text-3xl font-bold mb-4">{jeu.titre}</h1>
+        <div className="md:w-1/2 flex flex-col justify-center  p-3 border-2 border-amber-600/10 rounded-2xl shadow-xl">
+          <h1 className="text-5xl font-bold mb-4">{jeu.titre}</h1>
           <p className="text-gray-700 text-base mb-6">{jeu.description}</p>
 
           <div className="flex flex-col gap-4 text-sm">

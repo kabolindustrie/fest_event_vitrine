@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body>
+      <body className="bg-indigo-50">
         {/* Conteneur logo + navbar */}
         <div className="relative w-full">
           {/* Logo centré au-dessus de la navbar */}
