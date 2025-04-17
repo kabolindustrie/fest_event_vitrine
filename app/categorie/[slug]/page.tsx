@@ -19,7 +19,7 @@ export default function CategoriePage({ params }: Props) {
   if (jeuxFiltres.length === 0) return notFound();
 
   return (
-    <main className="px-6 py-10">
+    <main className="px-6 py-10 mt-20">
       <h1 className="text-3xl font-bold mb-6 capitalize">
         Catégorie : {params.slug}
       </h1>
@@ -29,7 +29,7 @@ export default function CategoriePage({ params }: Props) {
           <JeuCard
             key={jeu.id}
             titre={jeu.titre}
-            image={jeu.image[0]}
+            image={jeu.images}
             description={jeu.description}
             slug={jeu.slug}
           />

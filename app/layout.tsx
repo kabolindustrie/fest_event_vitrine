@@ -16,10 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Conteneur logo + navbar */}
         <div className="relative w-full">
           {/* Logo centré au-dessus de la navbar */}
-          <div className="absolute left-1/2 -translate-x-1/2 -top-0 z-50">
+          <div className="fixed left-1/2 -translate-x-1/2 -top-0 z-200">
             <Link href="/" className="block transition hover:scale-105">
               <Image
-                src="/festiEventLogo.png"
+                src="/images/festieventlogo.png"
                 alt="Logo FestiEvent"
                 width={120}
                 height={120}
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Contenu du site */}
-        <main className="pt-10">{children}</main>
+        <main className="">{children}</main>
       </body>
     </html>
   );

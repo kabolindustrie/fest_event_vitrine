@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface JeuCardProps {
   titre: string;
-  image: string;
+  image: string[];
   description: string;
   slug: string;
 }
@@ -13,8 +13,9 @@ export default function JeuCard({ titre, image, description, slug }: JeuCardProp
     <Link href={`/jeux/${slug}`} className="block">
       <div className="relative w-full h-64 overflow-hidden rounded-xl shadow-lg group cursor-pointer">
         <Image
-          src={image}
+          src={image[0]}
           alt={titre}
+          objectFit="cover"
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-110"
         />

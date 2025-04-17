@@ -16,11 +16,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full px-6 py-4 bg-white shadow-sm sticky top-0 z-40">
+    <header className="fixed top-0 left-0 w-full px-6 py-4 bg-white shadow-sm z-40">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Burger menu mobile */}
         <button
-          className="md:hidden"
+          className="md:hidden cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
