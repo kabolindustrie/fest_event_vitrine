@@ -1,10 +1,14 @@
-export const jeuxGonflables = [
+import { JeuGonflable } from "@/app/interface/jeuxInterface";
+
+export const jeuxGonflables: JeuGonflable[] = [
   {
     id: 1,
     titre: "Château Licorne",
     slug: "chateau-licorne",
     images: ["/images/chateaulicorne.png"],
-    description: "Un château coloré et féérique pour les enfants.",
+    descriptionCourte: "Un château coloré et féérique pour les enfants.",
+    descriptionLongue:
+      "Plongez dans un univers féerique avec ce château licorne aux couleurs pastel. Conçu pour stimuler l’imagination des plus petits, il offre un espace sécurisé pour sauter, courir et rêver en toute liberté.",
     tarif: 250,
     dimensions: "6 x 5 m",
     age: "à partir de 3 ans",
@@ -15,7 +19,9 @@ export const jeuxGonflables = [
     titre: "Toboggan Médiéval",
     slug: "toboggan-medieval",
     images: ["/images/toboganmedieval.png"],
-    description: "Un grand toboggan à thème médiéval pour les aventuriers.",
+    descriptionCourte: "Un grand toboggan à thème médiéval pour les aventuriers.",
+    descriptionLongue:
+      "Un toboggan gonflable au look médiéval, idéal pour les chevaliers en herbe. Avec sa glissade fluide et ses remparts stylisés, il transforme chaque descente en quête héroïque.",
     tarif: 280,
     dimensions: "10 x 4 m",
     age: "à partir de 5 ans",
@@ -26,7 +32,9 @@ export const jeuxGonflables = [
     titre: "Chevalier",
     slug: "chevalier",
     images: ["/images/chevalier.png"],
-    description: "Structure gonflable à thème chevaleresque.",
+    descriptionCourte: "Structure gonflable à thème chevaleresque.",
+    descriptionLongue:
+      "Cette structure à thème chevaleresque transporte les enfants au cœur d’un château fort. Parfaite pour les jeux de rôle, elle favorise l’imaginaire tout en offrant des activités physiques amusantes.",
     tarif: 240,
     dimensions: "5 x 5 m",
     age: "à partir de 4 ans",
@@ -37,7 +45,9 @@ export const jeuxGonflables = [
     titre: "Combat Sumo",
     slug: "combat-sumo",
     images: ["/images/combatsumo.png", "/images/combatsumo2.png"],
-    description: "Affrontez-vous dans des costumes de sumo géants.",
+    descriptionCourte: "Affrontez-vous dans des costumes de sumo géants.",
+    descriptionLongue:
+      "Enfilez un costume de sumo et entrez dans l’arène pour des combats hilarants en toute sécurité. Une animation idéale pour les ados et adultes en quête de fous rires.",
     tarif: 200,
     dimensions: "4 x 4 m",
     age: "à partir de 10 ans",
@@ -48,7 +58,9 @@ export const jeuxGonflables = [
     titre: "Double Faucheuse",
     slug: "double-faucheuse",
     images: ["/images/double_Faucheuse.png"],
-    description: "Un jeu d'équilibre et de réflexes avec bras rotatifs.",
+    descriptionCourte: "Un jeu d'équilibre et de réflexes avec bras rotatifs.",
+    descriptionLongue:
+      "Un défi d’agilité et de rapidité où il faut esquiver les bras rotatifs pour rester debout. Parfait pour les compétitions entre amis ou collègues.",
     tarif: 350,
     dimensions: "10 x 10 m",
     age: "à partir de 8 ans",
@@ -59,7 +71,9 @@ export const jeuxGonflables = [
     titre: "Puissance 4 Géant",
     slug: "puissance-4",
     images: ["/images/puissance4.png"],
-    description: "Le jeu classique en version XXL !",
+    descriptionCourte: "Le jeu classique en version XXL !",
+    descriptionLongue:
+      "Le célèbre jeu de stratégie en format géant. Accessible à tous les âges, il invite à la réflexion et à la convivialité dans un format XXL.",
     tarif: 120,
     dimensions: "2 x 1.5 m",
     age: "tout public",
@@ -70,7 +84,9 @@ export const jeuxGonflables = [
     titre: "Stand Popcorn",
     slug: "stand-popcorn",
     images: ["/images/machinepopcorn.jpg"],
-    description: "Parfait pour une ambiance fête foraine !",
+    descriptionCourte: "Parfait pour une ambiance fête foraine !",
+    descriptionLongue:
+      "Une animation sucrée incontournable pour les fêtes. Ce stand diffuse l’odeur irrésistible du popcorn chaud et apporte une touche de fête foraine à votre événement.",
     tarif: 150,
     dimensions: "1.5 x 1 m",
     age: "tout public",
@@ -81,7 +97,9 @@ export const jeuxGonflables = [
     titre: "Machine Barbe à Papa",
     slug: "machine-barbe-a-papa",
     images: ["/images/machinebarbeapapa.jpg"],
-    description: "Pour régaler les petits comme les grands.",
+    descriptionCourte: "Pour régaler les petits comme les grands.",
+    descriptionLongue:
+      "Régalez vos invités avec de délicieuses barbes à papa colorées. Une animation qui ravira les enfants et fera retomber les adultes en enfance.",
     tarif: 150,
     dimensions: "1.5 x 1 m",
     age: "tout public",
@@ -92,7 +110,9 @@ export const jeuxGonflables = [
     titre: "Le Château Enchanté",
     slug: "chateau-enchante",
     images: ["/images/lechateauenchanté.png"],
-    description: "Un château magique pour des moments féériques.",
+    descriptionCourte: "Un château magique pour des moments féériques.",
+    descriptionLongue:
+      "Un château gonflable grand format aux détails magiques, parfait pour les princesses et les jeunes aventuriers. Un incontournable pour les anniversaires féeriques.",
     tarif: 260,
     dimensions: "7 x 6 m",
     age: "à partir de 3 ans",
@@ -103,7 +123,9 @@ export const jeuxGonflables = [
     titre: "Tir au But",
     slug: "tir-au-but",
     images: ["/images/tiraubut.png"],
-    description: "Montre ton talent de footballeur !",
+    descriptionCourte: "Montre ton talent de footballeur !",
+    descriptionLongue:
+      "Idéal pour tester son adresse et organiser des mini-tournois, ce jeu ravira les fans de football de tous âges. Visez juste et marquez des points !",
     tarif: 180,
     dimensions: "4 x 3 m",
     age: "à partir de 6 ans",
@@ -114,7 +136,9 @@ export const jeuxGonflables = [
     titre: "Parcours Color",
     slug: "parcours-color",
     images: ["/images/parcourt_color.png"],
-    description: "Un parcours gonflable dynamique et coloré.",
+    descriptionCourte: "Un parcours gonflable dynamique et coloré.",
+    descriptionLongue:
+      "Un parcours gonflable riche en couleurs, tunnels, obstacles et glissades. Idéal pour canaliser l’énergie débordante des enfants dans un cadre sécurisé et ludique.",
     tarif: 280,
     dimensions: "15 x 5 m",
     age: "à partir de 7 ans",
@@ -125,7 +149,9 @@ export const jeuxGonflables = [
     titre: "Toboggan Animaux",
     slug: "toboggan-animaux",
     images: ["/images/tobogananimaux.png"],
-    description: "Toboggan animalier amusant et décoratif.",
+    descriptionCourte: "Toboggan animalier amusant et décoratif.",
+    descriptionLongue:
+      "Avec ses décors animaliers et ses couleurs vives, ce toboggan émerveille les plus petits tout en leur offrant un moment de glisse en toute sécurité.",
     tarif: 260,
     dimensions: "10 x 4 m",
     age: "à partir de 5 ans",
@@ -136,7 +162,9 @@ export const jeuxGonflables = [
     titre: "Gladiateur",
     slug: "gladiateur",
     images: ["/images/gladiateur.png"],
-    description: "Affrontez-vous dans une arène gonflable.",
+    descriptionCourte: "Affrontez-vous dans une arène gonflable.",
+    descriptionLongue:
+      "Deux participants s’affrontent sur une plateforme gonflable avec des bâtons en mousse dans une ambiance de duel. Sensations fortes et rires garantis.",
     tarif: 300,
     dimensions: "8 x 8 m",
     age: "à partir de 8 ans",
