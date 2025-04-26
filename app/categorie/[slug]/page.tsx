@@ -1,13 +1,17 @@
+import { notFound } from "next/navigation";
 import { jeuxGonflables } from "@/data/jeux";
 import JeuCard from "@/components/JeuCard";
-import { notFound } from "next/navigation";
+
+interface CategoriePageProps {
+  params: { slug: string };
+}
 
 export async function generateStaticParams() {
   const categories = ["chateau", "toboggan", "parcours", "animation", "snack"];
   return categories.map((slug) => ({ slug }));
 }
 
-export default function CategoriePage({ params }: { params: { slug: string } }) {
+export default function CategoriePage({ params }: CategoriePageProps) {
   const jeuxFiltres = jeuxGonflables.filter((jeu) =>
     jeu.categories.some((cat) => cat.toLowerCase() === params.slug.toLowerCase())
   );
@@ -21,7 +25,6 @@ export default function CategoriePage({ params }: { params: { slug: string } }) 
       <h1 className="text-4xl font-bold mb-10 capitalize text-center">
         {params.slug.replace("-", " ")}
       </h1>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {jeuxFiltres.map((jeu) => (
           <JeuCard
