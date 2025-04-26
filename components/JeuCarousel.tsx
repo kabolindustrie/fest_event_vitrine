@@ -20,12 +20,12 @@ export default function JeuCarousel({ images }: Props) {
         <CarouselContent>
           {images.map((src, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[300px] rounded-xl overflow-hidden">
+              <div className="relative h-[470px] rounded-xl overflow-hidden">
                 <Image
                   src={src}
                   alt={`Image ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </CarouselItem>

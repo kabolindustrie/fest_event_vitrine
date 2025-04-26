@@ -10,7 +10,6 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-// import { cn } from "@/lib/utils"; // généré par shadcn
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,8 +47,8 @@ export default function Navbar() {
                   <Link href="/categorie/toboggan" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
                     Toboggans
                   </Link>
-                  <Link href="/categorie/animation" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
-                    Animation
+                  <Link href="/categorie/parcours" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
+                    Parcours gonflables
                   </Link>
                   <Link href="/categorie/snack" className="text-sm text-gray-700 hover:bg-gray-100 rounded px-2 py-1">
                     Snacks
@@ -74,14 +73,17 @@ export default function Navbar() {
             <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-black">
               Accueil
             </Link>
-            <Link href="/categorie/jeux-gonflables" onClick={() => setMenuOpen(false)} className="hover:text-black">
-              Jeux gonflables
-            </Link>
-            <Link href="/categorie/chateaux-gonflables" onClick={() => setMenuOpen(false)} className="hover:text-black">
+            <Link href="/categorie/chateau" onClick={() => setMenuOpen(false)} className="hover:text-black">
               Châteaux gonflables
             </Link>
-            <Link href="/categorie/parcours-gonflables" onClick={() => setMenuOpen(false)} className="hover:text-black">
+            <Link href="/categorie/toboggan" onClick={() => setMenuOpen(false)} className="hover:text-black">
+              Toboggans
+            </Link>
+            <Link href="/categorie/parcours" onClick={() => setMenuOpen(false)} className="hover:text-black">
               Parcours gonflables
+            </Link>
+            <Link href="/categorie/snack" onClick={() => setMenuOpen(false)} className="hover:text-black">
+              Snacks
             </Link>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-black">
               Contact
