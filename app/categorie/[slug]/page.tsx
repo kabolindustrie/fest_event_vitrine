@@ -22,7 +22,7 @@ export default function CategoriePage({ params }: CategoriePageProps) {
 
   return (
     <main className="max-w-7xl mx-auto px-6">
-      <h1 className="text-4xl font-bold mb-10 capitalize text-center pt-50">
+      <h1 className="text-4xl font-bold mb-10 capitalize text-center mt-40">
         {params.slug.replace("-", " ")}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
