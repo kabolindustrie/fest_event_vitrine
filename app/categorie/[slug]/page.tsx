@@ -21,7 +21,7 @@ export default function CategoriePage({ params }: CategoriePageProps) {
   }
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-20">
+    <main className="max-w-7xl mx-auto px-6 py-50">
       <h1 className="text-4xl font-bold mb-10 capitalize text-center">
         {params.slug.replace("-", " ")}
       </h1>
