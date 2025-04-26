@@ -21,8 +21,8 @@ export default function Page({ params }: PageProps) {
   if (!jeu) return notFound();
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-50">
-      <div className="flex flex-col md:flex-row gap-8">
+    <main className="max-w-7xl mx-auto px-6">
+      <div className="flex flex-col md:flex-row gap-8 pt-60">
         <div className="w-full md:w-1/2 flex items-center">
           {jeu.images && <JeuCarousel images={jeu.images} />}
         </div>
