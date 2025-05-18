@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { jeuxGonflables } from "@/data/jeux";
 import JeuCarousel from "@/components/JeuCarousel";
-import { Euro, Ruler, Users } from "lucide-react";
+import { Euro, Ruler } from "lucide-react";
 
 interface PageProps {
   params: {
@@ -39,8 +39,8 @@ export default function Page({ params }: PageProps) {
               <span><strong>Dimensions :</strong> {jeu.dimensions}</span>
             </div>
             <div className="flex items-center gap-3">
-              <Users className="text-pink-600" />
-              <span><strong>Âge :</strong> {jeu.age}</span>
+              {/* <Users className="text-pink-600" /> */}
+              {/* <span><strong>Âge :</strong> {jeu.age}</span> */}
             </div>
           </div>
           <div className="mt-10">

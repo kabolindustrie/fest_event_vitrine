@@ -30,8 +30,13 @@ export default function Home() {
           <span className="text-blue-600">Châteaux colorés</span>, <span className="text-yellow-600">parcours sportifs</span>,
           <span className="text-green-600"> toboggans géants</span>, jeux originaux et animations sucrées :
           tout pour émerveiller vos invités et réussir vos fêtes, anniversaires ou événements pro.
+          <br />
+          <span className="text-sm text-gray-500 italic block mt-4">
+            Certaines images ont été générées via une intelligence artificielle, mais représentent fidèlement les structures réelles.
+          </span>
         </p>
       </section>
+
 
 
       {/* CONTENU */}

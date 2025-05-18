@@ -33,7 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Contenu du site */}
-        <main className="">{children}</main>
+        <main>{children}</main>
+
+        {/* Footer Bandeau Fixé en bas */}
+        <footer className="fixed bottom-0 w-full bg-pink-400 text-white text-sm py-2 px-4 shadow-md z-50 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-center">
+          <span>📍 8 Rue de la Mare Neuve, 91080 Évry-Courcouronnes</span>
+          <span>📞 06 18 42 28 14</span>
+        </footer>
       </body>
     </html>
   );
