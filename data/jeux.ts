@@ -273,7 +273,7 @@ export const jeuxGonflables: JeuGonflable[] = [
     id: 18,
     titre: "Toboggan Color",
     slug: "toboggancolor",
-    images: ["/images/toboggancolor.png", "/images/tobogancolor2.png", "/images/tobogancolor3.png", "/images/tobogancolor4.png"],
+    images: ["/images/tobogancolor2.png", "/images/tobogancolor3.png", "/images/tobogancolor4.png"],
     descriptionCourte: "Un toboggan ultra coloré et fun !",
     descriptionLongue: "Un grand toboggan aux couleurs vives qui attire le regard et garantit des glissades répétées pour les enfants !",
     tarif: 300,
